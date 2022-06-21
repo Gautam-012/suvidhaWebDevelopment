@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navbar */
+
+.container div {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  
+  .container a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem;
+  }
+  
+  .btn {
+    position: relative;
+    border: none;
+    text-decoration: none;
+    color: #3fc495;
+    background-color: white; 
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+  
+    height: 2px;
+    background-color: #3fc495;
+  
+    transition: transform 300ms ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .btn:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .container {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    background-color: white;
+  }
+
+/* main */
+.main{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url("./pic/bg2.png");
+}
+
+.main-components h1{
+    font-size: 5rem;
+    color: #3fc495;
+}
+
+.main-components p {
+    font-size: 1.2rem;
+}
+
+/* events */
+h1{
+    color: #3664f4;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+.events{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.event1 > div:hover{
+    color: #f74e27;
+    cursor: pointer;
+}
+
+.section{
+    display: flex;
+    text-align: center;
+    /* height: 100vh; */
+    align-items: center;
+}
+
+.section-item{
+    display: block;
+    width: 80%;
+}
+.section-item h2{
+    color: red;
+    font-size: 4rem;
+}
+
+.section-item p{
+    font-size: 1.20rem;
+}
+
+/* partner */
+.partner{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.registration{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #3664f4;
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+/* footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #252525;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
+ul li:hover{
+    color: #3664f4;
+    cursor: pointer;
+}
+i{
+    font-size: 1.5rem;
+}
+
+i:hover{
+    color: #3664f4 !important;
+}
+
+.copy{
+    background-color: #252525;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+}
